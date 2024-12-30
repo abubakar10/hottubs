@@ -1,0 +1,348 @@
+@font-face {
+    font-family: "quick-sand";
+    src: url("./assets/fonts/Quicksand-Regular.ttf");
+}
+
+*{
+    font-family: "quick-sand";
+}
+
+
+.section1{
+
+}
+.section1 .nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section1 .nav .contacts{
+   display: flex;
+   align-items: center;
+   column-gap: 10px;
+}
+.section1 .nav .contacts .phone-details{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+
+}
+.section1 .nav .contacts .phone-details a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #6EC1E4;
+    font-weight: bolder;
+}
+.section1 .nav .contacts .phone-details a img{
+    width: 16px;
+    cursor: pointer;
+}
+.section1 .nav .text{
+    color: #6EC1E4;
+}
+
+
+/* section3 */
+.section3{
+    overflow: hidden;
+}
+.section3 .options .dropdown .btn{
+    padding: 20px 45px;
+    font-size: 20px;
+    background-color: #2589ee;
+    color: white;
+    border-radius: 1px;
+    margin-left: 1px;
+    border: none;
+}
+.section4 {
+    background-image: url("./assets/images/background-tubs.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px; /* Example height */
+    padding-right: 20px;
+}
+.section4 .backgroundimg{
+    display: flex;
+   justify-content: flex-end;
+}
+.section4 .backgroundimg .text{
+   margin-top: 60px;
+   color: white;
+}
+.section4 .backgroundimg .text h1{
+    color: white;
+    text-align: center;
+}
+.section4 .backgroundimg .text p{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 20px;
+}
+.section4 .backgroundimg .text .second-heading{
+    font-weight: 400;
+}
+.section4 .backgroundimg .text ul{
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.section4 .backgroundimg .text ul li{
+    padding-top: 8px;
+    padding-left: 15px;
+}
+.section4 .backgroundimg .text .button .next{
+    padding: 10px 30px;
+    width: 30%;
+     background-color: #ffba00;
+     color: white;
+     border: none;
+     margin-top: 20px;
+}
+.section5{
+    /* min-height: 100vh; */
+    display: grid;
+    place-items: center;
+}
+.section5 .slider{
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  
+}
+.section5 .slider {
+    position: relative; /* Ensures ::before and ::after are positioned relative to this element */
+    overflow: hidden;   /* Hides any overflow from the pseudo-elements */
+}
+
+.section5 .slider::before,
+.section5 .slider::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 5%; /* Adjust width of gradient */
+    z-index: 2;
+}
+
+.section5 .slider::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0) 100%);
+}
+
+.section5 .slider::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0) 100%);
+}
+.section5 .slider .slide-track{
+    display: flex;
+    width: calc(250px * 18);
+   
+    animation: scroll 40s linear infinite;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 9));
+    }
+}
+.section5 .slider .slide-track .slide{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    
+}
+.section5 .slider .slide-track .slide img{
+    width: 100%;
+}
+
+.section7{
+    margin: 50px 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 150px;
+}
+.section7 .textside{
+    width: 50%;
+}
+.section7 .textside h1{
+    font-weight: bolder;
+}
+.section7 .textside p{
+    font-size: 18px;
+    margin-top: 20px;
+}
+.section7 .textside .next{
+    padding: 10px 30px;
+    width: 170px;
+     background-color: #ffba00;
+     color: white;
+     border: none;
+     margin-top: 20px;
+}
+.section7 .images{
+    display: flex;
+    align-items:center;
+    column-gap: 150px;
+    width: 50%;
+
+}
+
+.section7 .images .img1 img{
+    width: 100%;
+}
+
+.section9{
+    margin: 30px 80px;
+}
+
+.section9 .main-div .cardss{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 60px;
+    gap: 20px;
+    
+}
+.section9 .main-div .cardss .cards-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 30px;
+    background-color: #ececec;
+    border-radius: 4px;
+    width: 100%;
+} 
+.section9 .main-div .cardss .cards-options h1{
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+.section9 .main-div .cardss .cards-options p{
+    text-align: center;
+}
+.section9 .main-div .cardss .cards-options a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #0080ff;
+}
+.section9 .main-div .cardss .cards-options img{
+    margin-top: 50px;
+   
+}
+.section10{
+    padding: 50px 100px;
+}
+.section10 .sliders{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+.section10 .sliders .slider1{
+    width: 50%;
+}
+.section10 .sliders  .carousel-item img{
+    width: 100%;
+    height: 500px;
+}
+.section10 .sliders .carousel-indicators{
+    padding-top: 1000px;
+}
+.section10 .sliders .carousel-indicators button{
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    margin-top: 1000px;
+    
+
+}
+.section10 .sliders .slider2{
+   width: 50%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.section10 .sliders .slider2 .carousel-control-prev-icon,
+.section10 .sliders .slider2 .carousel-control-next-icon {
+  background-color: black; /* Black arrows */
+}
+
+/* Style the carousel indicators (buttons) */
+.section10 .sliders .slider2 .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: black; /* Black buttons */
+}
+
+/* Style for active indicator */
+.section10 .sliders .slider2 .carousel-indicators .active {
+  background-color: darkgray; /* Slightly lighter for the active button */
+}
+
+/* Style the text container */
+.section10 .sliders .slider2.carousel-inner {
+  height: 200px; /* Adjust height of the carousel */
+  display: flex;
+  align-items: center; /* Center text vertically */
+  justify-content: center;
+}
+
+.section10 .sliders .slider2 .carousel-caption {
+  color: black;
+}
+
+    
+
+footer .footer-section{
+    background-image: url('./assets/images/footer-img-1\ \(1\).webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+footer .footer-section .heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 50px 0px;
+    margin: auto;
+   
+}
+footer .footer-section .heading h1{
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    margin: 30px;
+    font-weight: bolder;
+}
+footer .footer-section .links{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 100%;
+    background-color: #ffba00;
+    
+}
+footer .footer-section .links a{
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border-left: 0.2px solid white;
+}
+footer .footer-section .details{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
